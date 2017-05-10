@@ -7,7 +7,7 @@ class Recipe < ActiveRecord::Base
     has_many    :directions
     has_many    :reviews 
     has_many    :recipe_calories
-    has_many    :comments, as: :commentable
+    # has_many    :comments, as: :commentable
     has_many    :calories, through: :recipe_calories
     has_many    :recipe_preptimes
     has_many    :preptimes, through: :recipe_preptimes
